@@ -1,5 +1,14 @@
+/* Setting up styles and stuff booooring :) */
+
 body{
-    background-color: rgb(200, 253, 255);
+    background-color: rgb(250, 135, 100);
+}
+
+.titleGame{
+    font-size:150px;
+    position: absolute;
+    margin-left: calc(50% - (748px /2));
+    margin-top : 5%;
 }
 
 td{
@@ -19,7 +28,7 @@ table{
     margin-left: -155px;
     top:150px
 }td{
-    background-color: rgb(131, 162, 175);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     opacity: 0.6;
     transition: 0.3s;
@@ -29,6 +38,9 @@ td:hover{
     opacity: 1;
 }
 
+.gameField{
+    display: none;
+}
 .endgame{
     display:none;
     width: 200px;
@@ -66,7 +78,7 @@ a {
     position: absolute;
     left:50%;
     margin-top: 500px;
-    margin-left: -80px;
+    margin-left: -110px;
 }
 
 a .label,
@@ -181,7 +193,7 @@ body {
         list-style: none;
         width: 20px;
         height: 20px;
-        background: rgba(96, 172, 244, 0.41);
+        background: rgba(250, 46, 46, 0.452);
         animation: animate 25s linear infinite;
         bottom: -150px;
     }
@@ -340,18 +352,4 @@ body {
         opacity: 0;
         border-radius: 50%;
     }
-}
-#myButton{
-    background-color: #f4511e;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    opacity: 0.6;
-    transition: 0.3s; 
-    position: absolute;
-    margin-left: 80%;
-    margin-top: 40%;
 }
