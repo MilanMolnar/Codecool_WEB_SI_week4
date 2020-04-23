@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table>
+    <p class="titleGame">Tic Tac Toe</p>
+    <!-- Creating game field -->
+    <table class="gameField">
         <tr>
             <td class="cell" id="0"></td>
             <td class="cell" id="1"></td>
@@ -30,12 +32,12 @@
     </div>
     <script src="script.js"> </script>
 
-
-    <a href="javascript:;" onClick="startGame()">
+    <!-- Button for Minimax AI -->
+    <a href="javascript:;" onClick="startGameMinimax()">
         <svg class="icon-arrow before">
             <use xlink:href="#arrow"></use>
         </svg>
-        <span class="label">Replay</span>
+        <span class="label">Play Minimax</span>
         <svg class="icon-arrow after">
             <use xlink:href="#arrow"></use>
         </svg>
@@ -49,31 +51,27 @@
         </symbol>
       </defs>
     </svg>
-    <button id="myButton" class="float-left submit-button" >HARDMODE</button>
-
-    <script type="text/javascript">
-    document.getElementById("myButton").onclick = function () {
-        location.href = "https://bit.ly/2VlpwDL";
-    };
-    </script>
+    <!-- Button for easy bot -->
+    <a href="javascript:;" onClick="startGameEasy()" style="margin-top:570px">
+        <svg class="icon-arrow before">
+            <use xlink:href="#arrow"></use>
+        </svg>
+        <span class="label">Play EasyBot</span>
+        <svg class="icon-arrow after">
+            <use xlink:href="#arrow"></use>
+        </svg>
+    </a>
+    
+    <svg style="display: none;">
+      <defs>
+        <symbol id="arrow" viewBox="0 0 35 15">
+          <title>Arrow</title>
+          <path d="M27.172 5L25 2.828 27.828 0 34.9 7.071l-7.07 7.071L25 11.314 27.314 9H0V5h27.172z "/>
+        </symbol>
+      </defs>
+    </svg>
+    <!-- bubble animation -->
     <ul class="circles" style="pointer-events:none; ">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
         <li></li>
         <li></li>
         <li></li>
