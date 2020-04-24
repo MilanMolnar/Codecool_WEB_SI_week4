@@ -31,11 +31,13 @@ function startGame(){
         cells[i].style.cursor = "pointer";
     }
     if (!isMinimax) {
-        document.querySelector(".circles").style.display = "none"
+        document.querySelectorAll('.circles li').forEach(c => {
+            c.style.background = "rgba(96, 172, 244, 0.35)";})
         document.querySelector("body").style.background = "rgb(200, 253, 255)";
     }
     else{
-        document.querySelector(".circles").style.display = "block"
+        document.querySelectorAll('.circles li').forEach(c => {
+            c.style.background = "rgba(250, 46, 46, 0.452)";})
         document.querySelector("body").style.background = "rgb(250, 135, 100)";
     }
 
